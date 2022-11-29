@@ -166,7 +166,8 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 
@@ -181,6 +182,7 @@
     color: white;
     font-size: 16px;
     font-family: 고딕체;
+    font-weight: normal;
 }
 
 
@@ -214,7 +216,8 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 
@@ -229,6 +232,7 @@
     color: white;
     font-size: 16px;
     font-family: 고딕체;
+    font-weight: normal;
 }
 
 
@@ -262,7 +266,8 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 
@@ -277,6 +282,7 @@
     color: white;
     font-size: 16px;
     font-family: 고딕체;
+    font-weight: normal;
 }
 
 /* 상품 끝 */

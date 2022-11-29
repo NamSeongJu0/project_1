@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,101 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="reset.css">
 </head>
+
 <body>
-    
+    <!-- 헤더 부분 -->
+    <header>
+        <a href="index.html">
+            <div class="divHealingForest">Healing<br>Forest</div>
+        </a>
+        <div id="Healing">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+
+        <div class="img1">
+            <img src="img0.png" alt="">
+            <form action="action_page.php">
+                <input type="text" name="box" placeholder="검색">
+            </form>
+        </div>
+    </header>
+    <!-- 헤더 끝 -->
+
+
+    <!-- 로그인 페이지 -->
+    <div id="LOGINBOX">
+        <h2>로그인</h2>
+        <form action="action_page.php">
+
+            <!-- 입력 박스와 체크 박스 -->
+            <div id="Login">
+                <input type="text" name="idbox" placeholder="아이디를 입력하세요" minlength="10" maxlength="18" autofocus><br>
+                <input type="text" name="passwordbox" placeholder="비밀번호를 입력하세요" minlength="10" maxlength="18"><br><br>
+                <input type="checkbox" name="box" id="check">
+                <label for="check">이메일 저장</label>
+            </div>
+        </form>
+
+
+            <!-- 로그인 및 여러 버튼들 -->
+            <div class="log">로그인하기</div><br>
+
+            <div class="span">
+                <span>회원가입</span>
+                <span>아이디 찾기</span>
+                <span>비밀번호 찾기</span>
+            </div>
+
+
+            <!-- 간편 로그인 -->
+            <div class="simplelogin">
+                <div class="Qlogin">간편로그인</div>
+                <a href="#"><img src="Loginimg/naver.png" alt="네이버"></a>
+                <a href="#"><img src="Loginimg/kakao.png" alt="카카오톡"></a>
+                <a href="#"><img src="Loginimg/facebook0.png" alt="페이스북"></a>
+            </div>
+    </div>
+
+
+    <!-- 풋터 부분 -->
+    <footer>
+        <div class="section">
+            <div class="information1">
+                <ul>
+                    <li><b>문의</b> 안내 연중무휴 07:00 ~ 22:00</li>
+                    <li><b>회사명</b> Healing Forest</li>
+                    <li><b>주소</b> 경기 안산시 단원구 고잔2길 45 코스모프라자</li>
+                    <li><b>이메일</b> skaehdwn0@naver.com</li>
+                </ul>
+            </div>
+
+            <div class="information2">
+                <ul>
+                    <li><b>대표</b> 남성주</li>
+                    <li><b>사업자등록번호</b> 254-65-1252</li>
+                    <li><b>전화번호</b> 031-227-1004</li>
+                    <li><b>Copyright 2022 Healing Forest, All Rights Reserved!</b></li>
+                </ul>
+            </div>
+
+            <div class="img2">
+                <a href="#"><img src="instar.png" alt="인스타"></a>
+                <a href="#"><img src="Twich.png" alt="트위치"></a>
+                <a href="#"><img src="facebook.png" alt="페북"></a>
+                <a href="#"><img src="youtube.png" alt="유튜브"></a>
+            </div>
+        </div>
+
+        <div class="img4">
+            <a href="#"><img src="top.png" alt="맨위로"></a>
+        </div>
+    </footer>
 </body>
+
 </html>
