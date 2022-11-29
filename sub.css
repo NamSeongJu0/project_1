@@ -129,7 +129,7 @@
 
 
 /* 이미지 속성 */
-img {
+#section img {
     width: 276px;
     height: 276px;
     border-radius: 15px;
