@@ -5,26 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Healing Forest</title>
     <link rel="stylesheet" href="index.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <!-- 디저트 호버 + 이벤트 깜빡임 효과 -->
-    <script>
-        $(document).ready(function () {
-            $('#dessert img').hover(function () {
-                $(this).siblings('.best').fadeIn();
-            }, function () {
-                $(this).siblings('.best').fadeOut();
-            });
-        });
-
-        setInterval(function () {
-            $('.Event').toggle();
-        }, 150);
-    </script>
+    <script src="index.js"></script>
 </head>
 
 <body>
