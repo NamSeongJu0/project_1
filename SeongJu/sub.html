@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub page</title>
+    <link rel="stylesheet" href="sub.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="common.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+        // 라벨 클릭 시 보여지는 스크립트
+        $(function() {
+            $('.menuList label:nth-of-type(1)').click(function() {
+                $("#CoffeeList").fadeIn();
+                $("#IceBlendedList").hide();
+                $("#BakeryList").hide();
+            });
+
+
+            $('.menuList label:nth-of-type(2)').click(function() {
+                $("#IceBlendedList").fadeIn().css('display', 'flex');
+                $("#CoffeeList").hide();
+                $("#BakeryList").hide();
+            });
+
+
+            $('.menuList label:nth-of-type(3)').click(function() {
+                $("#BakeryList").fadeIn().css('display', 'flex');
+                $("#IceBlendedList").hide();
+                $("#CoffeeList").hide();
+            });
+        });
+
+
+        // 커피 이미지 호버 시 상품 설명
+        $(document).ready(function () {
+            $('.textbox').hide();
+
+            $('#CoffeeList > div').hover(function () {
+                $(this).children('.textbox').stop().fadeIn().css('display', 'flex');
+            }, function () {
+                $(this).children('.textbox').stop().fadeOut();
+            });
+        });
+
+
+        // 블렌디드 이미지 호버 시 상품 설명
+        $(document).ready(function () {
+            $('.textbox').hide();
+
+            $('#IceBlendedList > div').hover(function () {
+                $(this).children('.textbox').stop().fadeIn().css('display', 'flex');
+            }, function () {
+                $(this).children('.textbox').stop().fadeOut();
+            });
+        });
+
+
+        // 베이커리 이미지 호버 시 상품 설명
+        $(document).ready(function () {
+            $('.textbox').hide();
+
+            $('#BakeryList > div').hover(function () {
+                $(this).children('.textbox').stop().fadeIn().css('display', 'flex');
+            }, function () {
+                $(this).children('.textbox').stop().fadeOut();
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <!-- 헤더 부분 -->
+    <header>
+        <a href="C:\Users\LINE\Documents\NamSeongJu\SeongJu\main.html">
+            <div class="divHealingForest">Healing<br>Forest</div>
+        </a>
+        <div id="Healing">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COFFEE</a></li>
+                <li><a href="#">BAKERY</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+
+        <div class="img1">
+            <img src="img0.png" alt="">
+            <form action="action_page.php">
+                <input type="text" name="box" placeholder="검색">
+            </form>
+        </div>
+    </header>
+    <!-- 헤더 끝 -->
+
+
+    <!-- 메뉴바 시작 -->
+    <div class="menubar">
+        <div class="float">
+            <a href="C:\Users\LINE\Documents\NamSeongJu\SeongJu\main.html" class="home">Home</a>
+            <ul>
+                <li>
+                    <a href="#" class="menu">Menu</a>
+                    <ul>
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Ice Blended</a></li>
+                        <li><a href="#">Bakery</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 메뉴바 끝 -->
+
+    <!-- menu list Start -->
+    <div class="menuList">
+        <label><a href="#">Coffee</a></label>
+        <label><a href="#">Ice Blended</a></label>
+        <label><a href="#">Bakery</a></label>
+    </div>
+    <!-- menu list End -->
+
+
+    <!-- 상품 시작 -->
+    <div id="section">
+        <!-- Coffee Start -->
+        <div id="CoffeeList">
+            
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\bn.jpg" alt="바닐라라떼">
+                <h2>바닐라라떼</h2>
+                <p>Both</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Vanilla Latte</h3>
+                    <p>바닐라 향이 어우러진 달콤한 커피</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 74mg, 당류 30g, 포화지방 8g, 단백질 10g, 카페인 90mg
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\cf.jpg" alt="카페라떼">
+                <h2>카페라떼</h2>
+                <p>Both</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Cafe’ Latte</h3>
+                    <p>우유를 곁들인 부드러운 커피</p>
+                    <p>
+                        
+                    <p>
+                        * 영양성분<br>
+                        나트륨 104mg, 당류 13g, 포화지방 8g, 단백질 7g, 카페인 184mg
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\es.jpg" alt="에스프레소">
+                <h2>에스프레소</h2>
+                <p>Hot</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Espresso</h3>
+                    <p>과일의 달콤함과 산미가 중후한 바디감 / 원두 선택 가능(Mild, Rich, Deep)</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        칼로리:6kcal  나트륨:0mg  당류:0g  포화지방:0g  단백질:1g  카페인:90mg * 60ml 기준
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\cm.jpg" alt="카라멜마끼아또">
+                <h2>카라멜마끼아또</h2>
+                <p>Both</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Caramel Macchiato</h3>
+                    <p>달콤한 카라멜 향이 어우러진 커피
+                    </p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 124mg, 당류 23g, 포화지방 6g, 단백질 9g, 카페인 90mg
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\cd.jpg" alt="콜드브루">
+                <h2>콜드브루</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Cold Brew</h3>
+                    <p>발아 과정을 거친 커피 원두를 추출하여 커피 고유의 맛과 향을 더욱 부드럽게 즐길 수 있는 커피</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        칼로리:10kcal  나트륨:0mg  당류:1g  포화지방:0g  단백질:0g    카페인:24mg * 355ml 기준 
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\cd1.jpg" alt="디카페인 콜드브루">
+                <h2>디카페인 콜드브루</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Decaf Cold Brew</h3>
+                    <p>커피 본연의 맛과 콜롬비아 특유의 부드러움과 조화로운 향미, 카페인이 99% 제거되어 부담없이 즐길 수 있는 고소한 콜드브루</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨:1mg  당류:0g  포화지방:0g  단백질:0g    카페인:16mg * 355ml 기준
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\cdL.jpg" alt="콜드브루 라떼">
+                <h2>콜드브루 라떼</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Cold Brew Latte</h3>
+                    <p>발아 과정을 거친 커피 원두를 추출하여 만든 더치 원액에 우유를 섞어 더욱 고소하게 즐길 수 있는 라떼</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        칼로리:162kcal  나트륨:104mg  당류:14g  포화지방:8g  단백질:7g  카페인:24mg * 355ml 기준 
+                    </p>
+                
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\cdL1.jpg" alt="디카페인 콜드브루 라떼">
+                <h2>디카페인 콜드브루 라떼</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    
+
+
+
+                    <h3>Decaf Cold Brew Latte</h3>
+                    <p>카페인이 99% 제거되어 부담없이 즐길 수 있는 콜드브루에 우유를 더해 더욱 고소하게 즐길 수 있는 라떼
+                    </p>
+                    <p>
+            
+                    <p>
+                        * 영향성분<br>
+                        나트륨:95mg  당류:9g  포화지방:4.3g  단백질:6g    카페인:16mg * 355ml 기준
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Ice Blended Start -->
+        <div id="IceBlendedList">
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\pbnL.jpg" alt="프로틴 바닐라 아이스 블렌디드">
+                <h2>프로틴 바닐라 아이스 블렌디드</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Protein Vanilla Ice Blended</h3>
+                    <p>바닐라 블렌디드에 프로틴을 첨가하여 보다 건강하게 즐길 수 있는 프리미엄 헬시 드링크</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        칼로리 377kcal, 나트륨 163mg, 당류 68g, 포화지방 6g, 단백질 27g
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\pcib.jpg" alt="프로틴 초콜릿 아이스 블렌디드">
+                <h2>프로틴 초콜릿 아이스 블렌디드</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Protein Chocolate Ice Blended</h3>
+                    <p>초콜릿 블렌디드에 프로틴을 첨가하여 보다 건강하게 즐길 수 있는 프리미엄 헬시 드링크</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 152mg, 당류 51g, 포화지방 10g, 단백질 27g
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\Pcib1.jpg" alt="프로틴 카라멜 아이스 블렌디드">
+                <h2>프로틴 카라멜 아이스 블렌디드</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Protein Caramel Ice Blended</h3>
+                    <p>카라멜 블렌디드에 프로틴을 첨가하여 보다 건강하게 즐길 수 있는 프리미엄 헬시 드링크</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br> 
+                        나트륨 219mg, 당류 78g, 포화지방 5g, 단백질 25g
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\gib.jpg" alt="그린티 아이스 블렌디드">
+                <h2>그린티 아이스 블렌디드</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Green Ice Blended</h3>
+                    <p>우유와 진한 녹차를 얼음과 함께 갈아 스무디로 마시는 non-coffee 음료</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 77mg, 당류 57g, 포화지방 6g, 단백질 7g, 카페인 45mg
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\cib.jpg" alt="청포도 아이스 블렌디드">
+                <h2>청포도 아이스 블렌디드</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Green grape Ice Blended</h3>
+                    <p>청포도에 얼음을 넣고 함께 갈아 청포도의 단맛을 더 강하게 느낄 수 있으며, 남녀노소 즐길 수 있는 음료
+                    </p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 13mg, 당류 35g, 포화지방 0g, 단백질 0g, 카페인 0mg
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\mib.jpg" alt="망고 아이스 블렌디드">
+                <h2>망고 아이스 블렌디드</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Mango Ice Blended</h3>
+                    <p>리얼 망고를 통째로 갈아 만든 스무디 음료</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 50mg, 당류 53g, 포화지방 6g, 단백질 1g
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\sib.jpg" alt="스트로베리 요거트 블렌디드">
+                <h2>스트로베리 요거트 블렌디드</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Strawberry Yoghurt Ice Blended</h3>
+                    <p>상큼한 요거트에 딸기를 듬뿍 더해 보다 더 진하고 풍성하게 즐길 수 있는 블렌디드</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 57mg, 당류 37g, 포화지방 2g, 단백질 4g, 카페인 0mg
+                    </p>
+                </div>
+            </div>
+        
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\pgib.jpg" alt="프로틴 그릭요거트 아이스 블렌디드">
+                <h2>프로틴 그릭요거트 아이스 블렌디드</h2>
+                <p>Ice</p>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Protein Plain Yoghurt Ice Blended</h3>
+                    <p>요거트 블렌디드에 프로틴을 첨가하여 보다 건강하게 즐길 수 있는 프리미엄 헬시 드링크</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        칼로리 570kcal, 나트륨 290mg, 당류 60g, 포화지방 11g, 단백질 25g
+                    </p>
+                </div>
+            </div>
+        </div>
+       
+
+        <!-- Bakery Start -->
+        <div id="BakeryList">
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\bncw.jpg" alt="보늬밤 크로와상">
+                <h2>보늬밤 크로와상</h2>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Chestnut croissant</h3>
+                    <p>바삭한 크로와상에 가을밤 크림과 달콤한 보늬밤을 더한 보늬밤 크로와상</p>
+                    <p>
+            
+                    <p>
+                        * 영양정보<br>
+                        나트륨 232mg, 당류 13g, 포화지방 8g, 단백질 5g
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\cacc.jpg" alt="쿠키 앤 크림 케이크">
+                <h2>쿠키 앤 크림 케이크</h2>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Cookie and Cream Cake</h3>
+                    <p>고소한 우유 생크림에 바삭한 쿠키 분태가 더해져 다양한 식감의 케이크</p>
+                    <p>
+            
+                    <p>
+                        * 영양정보<br>
+                        나트륨 128mg, 당류 23g, 포화지방 12g, 단백질 7g
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\cet.jpg" alt="치즈에그 토스트">
+                <h2>치즈에그 토스트</h2>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Cheese Egg Toast</h3>
+                    <p>투툼한 에그패티와 햄이 들어간 토스트 위에 쫄깃한 모짜렐라치즈가 듬뿍올라간 토스트</p>
+                    <p>
+            
+                    <p>
+                        * 영양정보<br>
+                        나트륨 920mg, 당류 10g, 포화지방 12g, 단백질 26g
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\dhs.jpg" alt="더블햄모짜렐라 샌드위치">
+                <h2>더블햄모짜렐라 샌드위치</h2>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Double ham mozzarella sandwich</h3>
+                    <p>담백한 호밀식빵에 고소한 모짜렐라와 신선한 토마토와 청상추, 더블햄이 더해진 클래식 샌드위치</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 820mg, 당류 7g, 포화지방 3.6g, 단백질 15g
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\mwcc.jpg" alt="메이플 월넛 크림치즈">
+                <h2>메이플 월넛 크림치즈</h2>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Maple Walnut Cream Cheese</h3>
+                    <p>향긋한 메이플시럽과 고소한 호두가 부드러운 크림치즈가 조화로운 크림치즈</p>
+                    <p>
+            
+                    <p>
+                        * 영양정보<br>
+                        나트륨 91mg, 당류 2g, 포화지방 1g, 단백질 2g
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\sbl.jpg" alt="슈보로(생크림)">
+                <h2>슈보로(생크림</h2>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Chouboro (fresh cream)</h3>
+                    <p>겉은 바삭바삭 속은 부드러운 크림이 가득한 슈보로</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br> 
+                        나트륨 330mg, 당류 26g, 포화지방 16g, 단백질 10g
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\snow.jpg" alt="스노우볼 쿠키">
+                <h2>스노우볼 쿠키</h2>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Snow Ball Cookie</h3>
+                    <p>호두와 크랜베리가 들어간 볼에 슈가파우더를 듬뿍 묻힌, 흰 눈을 닮은 쿠키</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 40mg, 당류 1g, 포화지방 14g, 단백질 7g
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="C:\Users\LINE\Documents\NamSeongJu\SeongJu\subimg\tq.jpg" alt="티라미수 큐브">
+                <h2>티라미수 큐브</h2>
+
+                <!-- 설명서 -->
+                <div class="textbox">
+                    <h3>Tiramisu Cube</h3>
+                    <p>부드럽고 진한 마스카포네 크림치즈와 커피쥬레로 맛을 더한 티라미수에 제철 생딸기를 듬뿍 올린 커피 티라미수</p>
+                    <p>
+            
+                    <p>
+                        * 영양성분<br>
+                        나트륨 88mg, 당류 29g, 포화지방 14g, 단백질 5g, 카페인 35mg
+                    </p>
+                </div>
+            </div>
+        </div>     
+    </div>
+    <!-- 상품 끝 -->
+
+
+
+
+    <!-- 풋터 부분 -->
+    <footer>
+        <div class="section">
+            <div class="information1">
+                <ul>
+                    <li><b>문의</b> 안내 연중무휴 07:00 ~ 22:00</li>
+                    <li><b>회사명</b> Healing Forest</li>
+                    <li><b>주소</b> 경기 안산시 단원구 고잔2길 45 코스모프라자</li>
+                    <li><b>이메일</b> skaehdwn0@naver.com</li>
+                </ul>
+            </div>
+
+            <div class="information2">
+                <ul>
+                    <li><b>대표</b> 남성주</li>
+                    <li><b>사업자등록번호</b> 254-65-1252</li>
+                    <li><b>전화번호</b> 031-227-1004</li>
+                    <li><b>Copyright 2022 Healing Forest, All Rights Reserved!</b></li>
+                </ul>
+            </div>
+
+            <div class="img2">
+                <a href="#"><img src="instar.png" alt="인스타"></a>
+                <a href="#"><img src="Twich.png" alt="트위치"></a>
+                <a href="#"><img src="facebook.png" alt="페북"></a>
+                <a href="#"><img src="youtube.png" alt="유튜브"></a>
+            </div>
+        </div>
+
+        <div class="img4">
+            <a href="#"><img src="top.png" alt="맨위로"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
