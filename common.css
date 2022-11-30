@@ -38,12 +38,6 @@ header .divHealingForest {
     }
 }
 
-@keyframes blink {
-    50% {
-        /* border-color: transparent */
-    }
-}
-
 header #Healing {
     width: 1255px;
     height: 88px;

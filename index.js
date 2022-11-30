@@ -9,4 +9,4 @@
 
         setInterval(function () {
             $('.Event').toggle();
-        }, 150);
+        }, 350);
