@@ -12,7 +12,6 @@
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="Login.js"></script>
-    
 </head>
 
 <body>
@@ -45,27 +44,28 @@
     <div id="LOGINBOX">
         <h2>로그인</h2>
         <form name="jslogin" id="Login">
-        
             <!-- 입력 박스와 체크 박스 -->
-            <input type="text" name="idbox" id="idbox1" placeholder="아이디를 입력하세요!" minlength="8" maxlength="15" autofocus>
+            <input type="text" name="idbox" id="idbox1" placeholder="아이디를 입력하세요!" minlength="9" maxlength="15"
+                autofocus>
             <input type="password" name="passwordbox" id="passwordbox1" placeholder="비밀번호를 입력하세요!" minlength="10"
                 maxlength="20">
-        
+
+            
+            <!-- 가로로 배치하기 위한 박스 -->
             <div class="EmailBox">
                 <input type="checkbox" name="box" id="check">
                 <label for="check">아이디 저장</label>
                 <button onclick="chk()">로그인 확인</button>
             </div>
         </form>
-    
+
 
         <!-- 로그인 및 여러 버튼들 -->
         <a href="#" class="log" onclick="log()">로그인하기</a>
-
         <div class="span">
-                <a href="#" onclick="join()">회원가입</a>
-                <a href="#" onclick="ide()">아이디 찾기</a>
-                <a href="#" onclick="pass()">비밀번호 찾기</a>
+            <a href="#" onclick="join()">회원가입</a>
+            <a href="#" onclick="ide()">아이디 찾기</a>
+            <a href="#" onclick="pass()">비밀번호 찾기</a>
         </div>
 
 
