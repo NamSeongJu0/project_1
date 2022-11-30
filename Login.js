@@ -21,10 +21,10 @@ function chk() {
     } else {
         if (passwordbox1Str == '') {
             alert('패스워드를 입력하시오');
+            return false;
         }
         else if (passwordbox1Len <= 10 || passwordbox1Len >= 20) {
             alert('패스워드를 10자리 이상, 20자리 이하로 입력하시오');
-            return false;
         }
     }
 }
