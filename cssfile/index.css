@@ -1,0 +1,456 @@
+@charset "UTF-8";
+
+header {
+    width: 100%;
+    height: 88px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.83);
+    z-index: 5;
+}
+
+header .divHealingForest {
+    text-shadow: 3px 3px 3px greenyellow;
+    position: absolute;
+    top: 12px;
+    left: 165px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black
+}
+
+
+.divHealingForest {
+    width: 8ch;
+    animation: typing 0.75s steps(100), blink .10s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+header #Healing {
+    width: 1255px;
+    height: 88px;
+    /* background-color: red; */
+    margin: 0 0 0 355px;
+    text-align: center;
+    float: left;
+
+}
+
+header div ul {
+    list-style: none;
+}
+
+header div ul li {
+    display: inline-block;
+    margin-top: 33px;
+    margin-left: 30px;
+    padding-left: 20px;
+}
+
+header div ul li a {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px greenyellow;
+    font-size: 27px;
+    color: black;
+}
+
+header div ul li a:hover {
+    color: yellowgreen;
+    cursor: grab;
+}
+
+.img1 {
+    width: 15%;
+    height: auto;
+    float: right;
+}
+
+header .img1 img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 29px;
+    right: 190px;
+    transition: all 1s;
+}
+
+form {
+    position: absolute;
+    top: 34px;
+    right: 10px;
+}
+
+form input {
+    transition: all 1s;
+}
+
+form input:hover {
+    background-color: aliceblue;
+}
+
+.img1:hover input[type="text"] {
+    transform: scale(1.2);
+    transform-origin: right center;
+
+}
+
+.img1:hover img {
+    transform: translateX(-100%);
+}
+
+.bar {
+    width: 100%;
+    height: 843px;
+    /* background-color: cadetblue; */
+    margin: 0 auto;
+}
+
+.bar img {
+    width: 100%;
+    height: 843px;
+}
+
+#about {
+    width: 1156px;
+    height: 1132px;
+    /* background-color: coral; */
+    margin: 0 auto;
+}
+
+#about h3,
+h4 {
+    text-align: center;
+}
+
+#about h3 {
+    font-size: 100px;
+    padding-top: 160px;
+    border-bottom: 3px solid black;
+    margin: 0 auto;
+    width: 40%;
+    color: rgb(248, 178, 0);
+    text-shadow: 4px 4px 4px wheat, 10px -5px 18px rosybrown;
+}
+
+#about h4 {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+#about div {
+    float: left;
+    margin: 60px 127px 0 139px;
+}
+
+#about .div1 {
+    float: left;
+    padding: 0 0 0 5px;
+}
+
+#about .dov2 {
+    float: right;
+}
+
+#about .div3 {
+    float: left;
+    padding: 0 0 0 5px;
+}
+
+#about .div4 {
+    float: right;
+    padding-right: 18px;
+}
+
+#about div a {
+    cursor: help;
+}
+
+#about img {
+    width: 300px;
+    height: 150px;
+}
+
+#about div p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.coffee {
+    width: 100%;
+    height: 654px;
+    /* background-color: aqua; */
+}
+
+.coffee img {
+    width: 100%;
+    height: 654px;
+}
+
+.coffee h3 {
+    font-size: 150px;
+    margin-top: -73px;
+    margin-left: 70px;
+    color: rgb(250, 190, 37);
+    text-shadow: 4px 4px 4px wheat, 10px -5px 10px rosybrown;
+}
+
+#coffee {
+    width: 1156px;
+    height: 755px;
+    /* background-color: green; */
+    margin: 0 auto;
+}
+
+#coffee h3,
+h4 {
+    text-align: center;
+}
+
+#coffee h3 {
+    font-size: 100px;
+    padding-top: 140px;
+    border-bottom: 3px solid black;
+    margin: 0 auto;
+    width: 40%;
+    color: rgb(248, 178, 0);
+    text-shadow: 4px 4px 4px wheat, 10px -5px 18px rosybrown;
+}
+
+#coffee h4 {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+#coffee div {
+    width: 1156px;
+    height: 300px;
+
+}
+
+#coffee div {
+    float: left;
+}
+
+#coffee div ul {
+    list-style: none;
+}
+
+#coffee div ul li {
+    display: inline-block;
+    margin: 30px 30px 0 140px;
+    position: relative;
+}
+
+
+#coffee div img {
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    border: 1px solid #ddd;
+}
+
+#coffee div img:hover {
+    box-shadow: 0 0 2px 5px rgba(255, 187, 0, 0.5);
+}
+
+#coffee div p {
+    font-size: 17px;
+    text-align: center;
+    padding: 20px 0 0 0;
+
+}
+
+#coffee .best {
+    width: 100%;
+    height: 30px;
+}
+
+#coffee div ul li .best {
+    margin: 60px 0 0 285px;
+    padding: 0 0 0 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-shadow: -1px 0px yellow, 0px 1px yellow, 1px 0px yellow, 0px -1px yellow;
+    position: absolute;
+    top: -55px;
+    right: -75px;
+}
+
+
+.dessert {
+    width: 100%;
+    height: 627px;
+    /* background-color: brown; */
+}
+
+.dessert img {
+    width: 100%;
+    height: 677px;
+}
+
+.dessert h3 {
+    font-size: 150px;
+    margin-top: -123px;
+    margin-left: 70px;
+    color: rgb(250, 190, 37);
+    text-shadow: 4px 4px 4px wheat, 10px -5px 10px rosybrown;
+}
+
+#dessert {
+    width: 1156px;
+    height: 982px;
+    /* background-color: chocolate; */
+    margin: 0 auto;
+}
+
+#dessert h3,
+h4 {
+    text-align: center;
+}
+
+#dessert h3 {
+    font-size: 100px;
+    padding-top: 180px;
+    border-bottom: 3px solid black;
+    margin: 0 auto;
+    width: 40%;
+    color: rgb(248, 178, 0);
+    text-shadow: 4px 4px 4px wheat, 10px -5px 18px rosybrown;
+}
+
+#dessert h4 {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+#dessert div {
+    float: left;
+}
+
+#dessert div ul {
+    list-style: none;
+}
+
+#dessert div ul li {
+    display: inline-block;
+    padding: 50px 40px 0 117px;
+    position: relative;
+}
+
+#dessert div ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#dessert div ul li .best {
+    margin: 55px 0 0 285px;
+    padding: 0 0 0 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-shadow: -1px 0px yellow, 0px 1px yellow, 1px 0px yellow, 0px -1px yellow;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    display: none;
+}
+
+#dessert img:hover {
+    cursor: zoom-in;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#dessert div img {
+    width: 200px;
+    height: 300px;
+}
+
+#dessert div p {
+    font-size: 17px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#shop {
+    width: 1156px;
+    height: 858px;
+    /* background-color: lightskyblue; */
+    margin: 0 auto;
+}
+
+#shop h3,
+h4 {
+    text-align: center;
+}
+
+#shop h3 {
+    font-size: 100px;
+    padding-top: 130px;
+    border-bottom: 3px solid black;
+    margin: 0 auto;
+    width: 40%;
+    color: rgb(248, 178, 0);
+    text-shadow: 4px 4px 4px wheat, 10px -5px 18px rosybrown;
+}
+
+#shop h4 {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+}
+
+#shop div {
+    float: left;
+    padding: 50px 0 0 150px;
+    position: relative;
+}
+
+#shop img {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+#shop .img0:hover {
+    cursor: zoom-in;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#shop div .Event {
+    margin: 60px 0 0 285px;
+    padding: 0 0 0 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-shadow: -1px 0px yellow, 0px 1px yellow, 1px 0px yellow, 0px -1px yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#shop p {
+    font-size: 17px;
+    float: right;
+    margin: -210px 140px 0 0;
+}

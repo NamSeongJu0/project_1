@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+
+/* 메뉴바 시작 */
+.menubar {
+    width: 1156px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.float {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menubar .float a.home {
+    text-shadow: 1px 1px 1px greenyellow;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.menubar .float a.menu {
+    text-shadow: 1px 1px 1px greenyellow;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.menubar .float a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.menubar .float ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.menubar .float ul li {
+    display: inline-block;
+}
+
+/* .menubar .float ul li:hover {
+    background: #555;
+} */
+
+.menubar .float ul li:hover ul {
+    display: block;
+}
+
+.menubar .float ul li ul {
+    position: absolute;
+    width: 140px;
+    display: none;
+}
+
+.menubar .float ul li ul li {
+    /* background: #555; */
+    display: block;
+}
+
+.menubar .float ul li ul li a {
+    display: block !important;
+}
+
+.menubar .float ul li ul li:hover {
+    text-shadow: 1px 1px 1px greenyellow;
+}
+
+/* 메뉴바 끝 */
+
+
+/* menu list 시작 */
+.menuList {
+    width: 1156px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+}
+
+.menuList label {
+    font-size: 55px;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    margin-bottom: 20px;
+}
+
+.menuList label a {
+    text-decoration: none;
+    color: white;
+}
+
+.menuList label a:hover {
+    color: black;
+    text-shadow: 2px 2px 2px greenyellow;
+}
+
+/* menu list 끝 */
+
+
+/* 상품 시작 */
+#section {
+    width: 1156px;
+    height: 850px;
+    margin: 0 auto;
+}
+
+/* 폰트 속성 */
+#section h2,p {
+    padding: 0 0 0 6px;
+}
+
+#section h2 {
+    font-size: 20px;
+}
+
+
+/* 이미지 속성 */
+#section img {
+    width: 276px;
+    height: 276px;
+    border-radius: 15px;
+    margin: 6px;
+}
+
+
+/*  커피 시작 */
+#CoffeeList {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+#CoffeeList div {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+/* 커피 설명 */
+#CoffeeList .textbox {
+    background-color: rgb(223, 192, 155);
+    width: 276px;
+    height: 276px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 6px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+/* 커피 폰트 설정 */
+#CoffeeList .textbox h3 {
+    color: white;
+    font-size: 20pt;
+    text-shadow: 1px 1px 1px greenyellow;
+}
+
+#CoffeeList .textbox p {
+    color: white;
+    font-size: 16px;
+    font-family: 고딕체;
+    font-weight: normal;
+}
+
+
+/* 아이스 블렌디드 시작 */
+#IceBlendedList {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    display: none;
+}
+
+#IceBlendedList div {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+/* 블렌디드 설명 */
+#IceBlendedList .textbox {
+    background-color: rgb(223, 192, 155);
+    width: 276px;
+    height: 276px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 6px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+/* 블렌디드 폰트 설정 */
+#IceBlendedList .textbox h3 {
+    color: white;
+    font-size: 20pt;
+    text-shadow: 1px 1px 1px greenyellow;
+}
+
+#IceBlendedList .textbox p {
+    color: white;
+    font-size: 16px;
+    font-family: 고딕체;
+    font-weight: normal;
+}
+
+
+/* 베이커리 시작 */
+#BakeryList {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    display: none;
+}
+
+#BakeryList div {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+/* 베이커리 설명 */
+#BakeryList .textbox {
+    background-color: rgb(223, 192, 155);
+    width: 276px;
+    height: 276px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 6px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+/* 베이커리 폰트 설정 */
+#BakeryList .textbox h3 {
+    color: white;
+    font-size: 20pt;
+    text-shadow: 1px 1px 1px greenyellow;
+}
+
+#BakeryList .textbox p {
+    color: white;
+    font-size: 16px;
+    font-family: 고딕체;
+    font-weight: normal;
+}
+
+/* 상품 끝 */
