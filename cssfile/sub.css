@@ -51,10 +51,6 @@
     display: inline-block;
 }
 
-/* .menubar .float ul li:hover {
-    background: #555;
-} */
-
 .menubar .float ul li:hover ul {
     display: block;
 }
@@ -66,7 +62,6 @@
 }
 
 .menubar .float ul li ul li {
-    /* background: #555; */
     display: block;
 }
 
@@ -119,7 +114,7 @@
 }
 
 /* 폰트 속성 */
-#section h2,p {
+#section h2, p {
     padding: 0 0 0 6px;
 }
 

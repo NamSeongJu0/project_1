@@ -198,7 +198,7 @@ footer .img4 img {
     height: 40px;
     float: right;
     margin: 45px 20px 0 50px;
-    position: fixed;
+    position: absolute;
     bottom: 75px;
     right: 220px;
 }

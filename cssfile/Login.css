@@ -4,14 +4,13 @@
 #LOGINBOX {
     width: 1156px;
     height: 850px;
-    margin: 0 auto;
-    position: relative;
+    margin: 90px auto;
+    /* position: relative; */
     border: 3px double black;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 /* 체크 박스에 체크될 시 색 지정 */
